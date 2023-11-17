@@ -32,6 +32,8 @@ def index():
     cursor.execute("SELECT * FROM posts")
     posts = cursor.fetchall()
     print(posts)
+    if posts == "None":
+        flash()
     connection.close()
     return render_template('index.html', posts=posts)
 

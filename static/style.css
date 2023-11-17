@@ -17,12 +17,16 @@ body {
     text-align: center; /* Center the text inside the container */
 }
 
-h1, h2 {
+h1 {
+    color:white;
+    font-size: 3em;
+}
+h2 {
     color: white;
 
 }
 h3 {
-    color:white;
+    color:#B2BABB;
     font-size:1em;
     font-weight: 100;
 }
@@ -37,25 +41,28 @@ li {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #424949;
 }
 
 strong {
     font-size: 1.2em;
-    color: #007BFF;
+    color: white;
+    text-align: left;
 }
 
 .post-content {
     margin-top: 10px;
-    color: #555;
+    color: white;
 }
 
 .post-date {
     margin-top: 10px;
-    color: #888;
+    color: #B2BABB;
 }
 
 form {
-    width: 300px;
+    text-align: center;
+    width: 800px;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -68,37 +75,48 @@ input {
 
 /* Apply styles to text type inputs */
 input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
+    font-family: inherit;
     width: 100%;
-    font-size: 16px;
-    background-color: grey;
-    transition: border-color 0.3s ease-in-out; /* Add smooth transition for border color */
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
 }
 
 /* Apply styles when the input is focused */
 input[type="text"]:focus {
     outline: none;
     border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    color: #c5d8eb
+
 }
 
-
 a {
-    color: #333;
-    background: #559ae4;
+    color: #007BFF;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 10px;
+    padding: 10px 20px; /* Add padding for better appearance */
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: #0056b3; /* Change background color on hover */
 }
 
 label {
     color:white
+}
+
+label.lb{
+    color:white;
+    font-size: 1.5em;
 }
 
 a.create-post-link {
@@ -109,9 +127,33 @@ a.create-post-link {
     padding: 10px 20px; /* Add padding for better appearance */
     background-color: #007BFF;
     color: #fff;
+    border-color: #007BFF;
     border-radius: 5px;
 }
 
 a.create-post-link:hover {
     background-color: #0056b3; /* Change background color on hover */
+}
+
+input.create-post-link {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Add padding for better appearance */
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+    border-radius: 5px;
+}
+
+input.create-post-link:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+form input.create-post-link {
+    margin-top: 10px; /* Optional: Adds some space above the button */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

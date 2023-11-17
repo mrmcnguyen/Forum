@@ -9,13 +9,13 @@
         <h1>Forum</h1>
 
         <h2>Posts</h2>
-        <h3>Version 1.0.0 - Posts are view only. Users cannot interact with posts by liking or commenting.</h3>
+        <h3>Version 1.0.0 - Posts are view only.<br> Users cannot interact with posts by liking or commenting.</h3>
         <ul>
             {% for post in posts %}
             <li>
-                <strong>{{ post[2] }}</strong>
-                <p class="post-content">{{ post[3] }}</p>
-                <p class="post-date">Posted at: {{ post[4] }}</p>
+                <strong>{{ post[1] }}</strong>
+                <p class="post-content">{{ post[2] }}</p>
+                <p class="post-date">Posted at: {{ post[3] }}</p>
             </li>
             {% endfor %}
         </ul>
