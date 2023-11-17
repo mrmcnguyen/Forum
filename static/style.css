@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    background-color: #333;
+}
+.content-container {
+    text-align: center;
+    max-width: 600px; /* Optional: Adjust the maximum width of the content container */
+    margin: auto; /* Center the content container */
+}
+.container {
+    text-align: center; /* Center the text inside the container */
+}
+
+h1, h2 {
+    color: white;
+
+}
+h3 {
+    color:white;
+    font-size:1em;
+    font-weight: 100;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+.post-content {
+    margin-top: 10px;
+    color: #555;
+}
+
+.post-date {
+    margin-top: 10px;
+    color: #888;
+}
+
+form {
+    width: 300px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+/* Apply styles to text type inputs */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    background-color: grey;
+    transition: border-color 0.3s ease-in-out; /* Add smooth transition for border color */
+}
+
+/* Apply styles when the input is focused */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+a {
+    color: #333;
+    background: #559ae4;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+label {
+    color:white
+}
+
+a.create-post-link {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Add padding for better appearance */
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+a.create-post-link:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Forum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content-container">
+        <h1>Forum</h1>
+
+        <h2>Posts</h2>
+        <h3>Version 1.0.0 - Posts are view only. Users cannot interact with posts by liking or commenting.</h3>
+        <ul>
+            {% for post in posts %}
+            <li>
+                <strong>{{ post[2] }}</strong>
+                <p class="post-content">{{ post[3] }}</p>
+                <p class="post-date">Posted at: {{ post[4] }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <a href="{{ url_for('post') }}" class="create-post-link">Create Post</a>
+    </div>
+</body>
+</html>

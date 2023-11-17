@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>New Post</h1>
+
+    <form method="post" action="{{ url_for('post') }}">
+        <label for="title">Title:</label>
+        <input type="text" name="title" required>
+
+        <label for="content">Content:</label>
+        <input type="text" name="content" required>
+
+
+        <a class="postButton"type="submit">Post</a>
+    </form>
+
+    <a href="{{ url_for('index') }}">Home</a>
+</body>
+</html>
