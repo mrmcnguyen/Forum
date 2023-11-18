@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Forum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="sidebar">
+            <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+            <a  href="{{ url_for('index') }}" class="sidebar-button">Home</a>
+            <a   href="{{ url_for('about') }}" class="sidebar-button">About</a>
+            <a  class="sidebar-button">Contact</a>
+        </div>
+        <div class="content-container">
+            <img src="{{ url_for('static', filename='logo.png') }}" class="aboutLogo">
+            <h1>Forums Version 1.0.0</h1>
+            <h3 class="about">This is the first release of Forums. The functionality of the application is very limited. Users cannot interact with posts by liking or commenting. 
+                <br><br>All data is stored locally, 
+                and no online interaction is possible. The purpose of this application is purely to simulate an online application. At no point in time is this application to be deployed or used
+                to transfer any data over a network connection.</h3>
+            <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
+        </div>
+        </div>
+</body>
+</html>

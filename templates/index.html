@@ -5,13 +5,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="header">
+        <!-- New div for login and signup buttons -->
+        <div class="auth-buttons">
+            <a  class="login-auth-button">Log In</a>
+            <a class="auth-button">Sign Up</a>
+        </div>
+    </div>
+
     <div class="container">
     <div id="header" class="sidebar">
         <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
         <a  href="{{ url_for('index') }}" class="sidebar-button">Home</a>
-        <a  class="sidebar-button">About</a>
+        <a  href="{{ url_for('about') }}" class="sidebar-button">About</a>
         <a  class="sidebar-button">Contact</a>
     </div>
+
     <div class="content-container">
         
         <h1>Posts</h1>
@@ -30,5 +39,6 @@
         <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
     </div>
     </div>
+    
 </body>
 </html>

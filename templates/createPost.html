@@ -9,7 +9,7 @@
     <div id="header" class="sidebar">
         <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
         <a  href="{{ url_for('index') }}"class="sidebar-button">Home</a>
-        <a  class="sidebar-button">About</a>
+        <a  href="{{ url_for('about') }}" class="sidebar-button">About</a>
         <a  class="sidebar-button">Contact</a>
     </div>
     <div class="content-container">

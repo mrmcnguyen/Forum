@@ -27,6 +27,10 @@ def create_db():
 def home():
     return render_template('home.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 # Home page - Display existing posts
 @app.route('/home')
 def index():
