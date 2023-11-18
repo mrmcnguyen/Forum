@@ -108,6 +108,12 @@ strong {
     text-align: left;
 }
 
+.post-user {
+    color: #B2BABB;
+    margin-top: 0;
+
+}
+
 .post-content {
     margin-top: 10px;
     color: white;
