@@ -29,29 +29,17 @@ body.homeLogo{
 
 }
 
-/* Styling for the sidebar buttons */
-.sidebar-button {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-    background-color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.sidebar-button:hover {
-    background-color: #e2e0e0;
-}
-
 .content-container {
     flex:1;
     text-align: center;
     padding: 20px;
     margin: auto; /* Center the content container */
+    border: 1px ;
+    border-radius: 15px;
 }
 .container {
     text-align: center; /* Center the text inside the container */
+    margin-left:250px;
 }
 
 h1 {
@@ -132,6 +120,7 @@ input[type="text"] {
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
+    overflow-y: auto;
 }
 
 /* Apply styles when the input is focused */
@@ -148,13 +137,30 @@ a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px; /* Add padding for better appearance */
-    background-color: #007BFF;
+    background: linear-gradient(to right, #6c7dff, #a05af0);
     color: #fff;
     border-color: #007BFF;
     border-radius: 5px;
 }
+
+
 a:hover {
     background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styling for the sidebar buttons */
+.sidebar-button {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.sidebar-button:hover {
+    background-color: #e2e0e0;
 }
 
 label {
@@ -172,7 +178,7 @@ a.create-post-link {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px; /* Add padding for better appearance */
-    background-color: #007BFF;
+    background: linear-gradient(to right, #6c7dff, #a05af0);
     color: #fff;
     border-color: #007BFF;
     border-radius: 5px;
@@ -180,6 +186,7 @@ a.create-post-link {
 
 a.create-post-link:hover {
     background-color: #0056b3; /* Change background color on hover */
+    background: linear-gradient(to right, #a05af0, #6c7dff);
 }
 
 input.create-post-link {
@@ -188,14 +195,14 @@ input.create-post-link {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px; /* Add padding for better appearance */
-    background-color: #007BFF;
+    background: linear-gradient(to right, #6c7dff, #a05af0);
     color: #fff;
-    border-color: #007BFF;
     border-radius: 5px;
+    border: none;
 }
 
 input.create-post-link:hover {
-    background-color: #0056b3; /* Change background color on hover */
+    background: linear-gradient(to right, #a05af0, #6c7dff);
 }
 
 form input.create-post-link {
