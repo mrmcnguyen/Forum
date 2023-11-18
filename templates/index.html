@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="container">
     <div id="header" class="sidebar">
         <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
         <a  href="{{ url_for('index') }}" class="sidebar-button">Home</a>
@@ -26,7 +27,8 @@
         </ul>
 
         <a href="{{ url_for('post') }}" class="create-post-link">Add Post</a>
+        <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
     </div>
-    <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
+    </div>
 </body>
 </html>

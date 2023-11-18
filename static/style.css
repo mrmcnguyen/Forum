@@ -13,11 +13,16 @@ body.homeLogo{
     justify-content: left;
 }
 
+.container {
+    display: flex;
+}
+
 .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
     left:0;
+    top:0;
     background-color: white;
     border-right: 1px rgb(204, 193, 193) solid;
     padding: 20px;
@@ -40,7 +45,9 @@ body.homeLogo{
 }
 
 .content-container {
+    flex:1;
     text-align: center;
+    padding: 20px;
     margin: auto; /* Center the content container */
 }
 .container {
