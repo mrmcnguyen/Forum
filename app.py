@@ -23,8 +23,12 @@ def create_db():
 
     conn.close()
 
-# Home page - Display existing posts
 @app.route('/')
+def home():
+    return render_template('home.html')
+
+# Home page - Display existing posts
+@app.route('/home')
 def index():
     create_db()
     connection = connect_db()
@@ -32,8 +36,6 @@ def index():
     cursor.execute("SELECT * FROM posts")
     posts = cursor.fetchall()
     print(posts)
-    if posts == "None":
-        flash()
     connection.close()
     return render_template('index.html', posts=posts)
 

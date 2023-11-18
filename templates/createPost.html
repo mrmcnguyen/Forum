@@ -5,7 +5,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div id="header" class="sidebar">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <a  href="{{ url_for('index') }}"class="sidebar-button">Home</a>
+        <a  class="sidebar-button">About</a>
+        <a  class="sidebar-button">Contact</a>
+    </div>
     <h1>New Post</h1>
+    <h3>Please consider what you post before posting. All profanity and disrespectful posts will be removed.</h3>
 
     <form method="post" action="{{ url_for('post') }}">
 

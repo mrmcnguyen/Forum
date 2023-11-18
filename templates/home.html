@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Forum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content-container">
+        <img src="{{ url_for('static', filename='logo.png') }}">
+        <h3>Version 1.0.0 - Posts are view only.<br> Users cannot interact with posts by liking or commenting.<br>All users are anonymous.</h3>
+    
+        <a href="{{ url_for('index') }}" class="create-post-link">Get Started</a>
+    </div>
+    <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
+</body>
+</html>

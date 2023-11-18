@@ -5,10 +5,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div id="header" class="sidebar">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <a  href="{{ url_for('index') }}" class="sidebar-button">Home</a>
+        <a  class="sidebar-button">About</a>
+        <a  class="sidebar-button">Contact</a>
+    </div>
     <div class="content-container">
-        <h1>Forum</h1>
-
-        <h2>Posts</h2>
+        
+        <h1>Posts</h1>
         <h3>Version 1.0.0 - Posts are view only.<br> Users cannot interact with posts by liking or commenting.</h3>
         <ul>
             {% for post in posts %}
@@ -20,7 +25,8 @@
             {% endfor %}
         </ul>
 
-        <a href="{{ url_for('post') }}" class="create-post-link">Create Post</a>
+        <a href="{{ url_for('post') }}" class="create-post-link">Add Post</a>
     </div>
+    <h3>Forums 2023 ©. Powered by YMD. All Rights Reserved.</h3>
 </body>
 </html>
